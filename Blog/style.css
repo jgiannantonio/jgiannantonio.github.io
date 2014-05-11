@@ -1,174 +1,155 @@
-<head>
-	<link type="text/css" rel="stylesheet" href="style.css"/>
-	<title>Blog</title>
-</head>
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 @font-face {
-    font-family: 'league_gothicregular';
-    src: url('leaguegothic-regular-webfont.eot');
-    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-regular-webfont.woff') format('woff'),
-         url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-family: 'league_gothicCnRg';
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot');
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
-#wrapper {
-	padding: 2em, 1em, 2em;
-	min-height: 100%;
-	width: 100%;
-	height: auto;
+html, body {
+	font-size: 16px;
+	height: 100%;
 }
 
-#topnav-ul {
-	font-color: black;
-	text-align: right;
-	float: right;
-	display: inline-block;
-}
-
-
-a:link {
-	color: black;
+a {
 	text-decoration: none;
-}
-
-a:visited {
-	color: #009900;
-	text-decoration: none;
+	color: #000;
 }
 
 a:hover {
-	color: black;
-	text-decoration: underline;
+	color: #a22;
 }
 
-#sidebar {
-	font-color: black;
-	text-align: left;
-	margin: 1em;
-	line-height: 200%;
-	float: left;
-	clear: left;
-	width: 25%;
-	font-family: 'league_gothicregular';
+.active {
+	color: #a22;
 }
 
-p {
-	font-color: black;
-	text-align: left;
-	margin-left: 22em;
-	margin top: 2em;
-	float: left;
-	clear: right;
-	width: 75%;
+#wrapper {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	min-height: 100%;
+	height: auto;
+	color: #000;
+	font-size: 62.5%;
+	width: 95%;
+	margin: 0 auto;
 }
 
-#topheader {
-	border-bottom: .2em solid black;
-	margin-top: 1em;
-	font-family: 'league_gothicregular';
+#main-header {
 	display: block;
 	width: 100%;
+	height: auto;
+	border-bottom: 0.2em #aaa solid;
+	padding: 0;
 }
 
-#footer {
+#logo {
+	position: relative;
+	padding: 0;
+	top: 1.5em;
+}
+
+#top-nav {
+	position: relative;
+	top: 4.5em;
+	display: inline-block;
+	float: right;
+	font-size: 1.5em;
+	padding: 0;
+}
+
+#top-nav ul li{
+	display: inline;
+	padding: 0 1em;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#side-nav {
 	display: block;
-	border-top: .2em solid black;
-	text-align: left;
+	float: left;
+	width: 15%;
+	height: auto;
+	font: 1.3em sans-serif;
+	font-weight: bold;
+	margin-top: 2em 4%;
+}
+
+#side-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#side-nav ul li {
+	padding: 0.7em 0;
+}
+
+#posts {
+	display: block;
+	float: right;
+	width: 77%;
+	height: auto;
+	margin: 0 3em 4%;
+	padding: 0;
+}
+
+section {
+	font: 1.2em sans-serif;
+}
+
+#posts h2 {
+	font-size: 3.5em;
+	font-family: 'league_gothicCnRg', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+#posts time {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+#posts article {
+	padding: 1em 0;
+}
+
+#main-footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	clear: both;
 	width: 100%;
-	font-family: 'league_gothicregular';
+	height: auto;
+	border-top: 0.2em #aaa solid;
 }
 
-h5 {
-	font: bold;
-	font-size: 80%;
-	font-family: 'league_gothicregular';
+#copyright {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.8em 0;
+	margin: 0;
 }
 
-h3 {
-	font: bold;
-	font-size: 200%;
-	font-family: 'league_gothicregular';
+#contact {
+	list-style: none;
+	padding: 0;
 }
 
-h1 {
-	font-family: 'league_gothicregular';
+#about {
+	display: block;
+	width: 40%;
+	float: left;
+	text-align: justify;
 }
 
-#bodypost {
-	margin-top: 2em;
-	margin-left: 18em;
-	margin-bottom: 2em;
-	font-family: 'league_gothicregular';
-	width: 75%;
-}
-
-/***MEDIA SPECS***/
-
-/*mobile*/
-@media screen and (max-width:500px) {
- 
-}
-/*tablet*/
-@media screen and (min-width:501px) and (max-width:999px) {
-   
-}
-
-/*desktop*/
-@media screen and (min-width:1000px) {
-   
+#email {
+	font-weight: bold;
 }
