@@ -4,103 +4,171 @@
 </head>
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('fonts/LeagueGothic-Regular-webfont.eot');
-    src: url('fonts/LeagueGothic-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/LeagueGothic-Regular-webfont.woff') format('woff'),
-         url('fonts/LeagueGothic-Regular-webfont.ttf') format('truetype'),
-         url('fonts/LeagueGothic-Regular-webfont.svg#LeagueGothicRegular') format('svg');
+    font-family: 'league_gothicregular';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  max-width:50em;
-  margin:1em;
 
-}
-	#header{
-	padding-left:35em;
-	padding-right:0em;
-	position:relative:0em;
-	height:4em;
-	text-decoration: none;
-	}
-
-	#nav{position:absolute;
-	width: 200px;
-	top:2.5em;
-	left:0em;
-	}
-	.container {
-  display: -webkit-flex;
-  display: flex;
+#wrapper {
+	padding: 2em, 1em, 2em;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
 }
 
-.flex-column {
-  -webkit-flex: 1;
-          flex: 1;
+#topnav-ul {
+	font-color: black;
+	text-align: right;
+	float: right;
+	display: inline-block;
 }
 
-li {
-width:240px;
-background-color: #ffffff;
-padding: 1px;
-margin-right:7px;margin-bottom:7px;float:left;
-}
 
-li a{text-decoration:none;}
-
-a{
-	color:000000;
+a:link {
+	color: black;
 	text-decoration: none;
 }
 
-li{
-
+a:visited {
+	color: #009900;
+	text-decoration: none;
 }
 
-div{
-	clear:both; min-height:10px; overflow:hidden;
-	}
-
-
-#col1{
-	float:left; min-height:100px;margin-right:10px; margin-top:10px; margin-bottom:10px;
+a:hover {
+	color: black;
+	text-decoration: underline;
 }
 
-#col2{
-	float:left; min-height:100px; margin-left:250px; margin-top:-90px; margin-bottom:10px;
+#sidebar {
+	font-color: black;
+	text-align: left;
+	margin: 1em;
+	line-height: 200%;
+	float: left;
+	clear: left;
+	width: 25%;
+	font-family: 'league_gothicregular';
 }
 
-.site-header {
-	padding-top: 0;
+p {
+	font-color: black;
+	text-align: left;
+	margin-left: 22em;
+	margin top: 2em;
+	float: left;
+	clear: right;
+	width: 75%;
 }
 
-.main-navigation {
-margin-top:0;	
+#topheader {
+	border-bottom: .2em solid black;
+	margin-top: 1em;
+	font-family: 'league_gothicregular';
+	display: block;
+	width: 100%;
 }
 
-.container {
-	position:relative; display: -webkit-flex;
-	display: flex;
+#footer {
+	display: block;
+	border-top: .2em solid black;
+	text-align: left;
+	width: 100%;
+	font-family: 'league_gothicregular';
 }
 
-.navbar{
-	position: absolute;
-	left: 0px;
-	width:200px;
-}
-.flex-column {
-	-webkit-flex:1;
-		flex:1;
+h5 {
+	font: bold;
+	font-size: 80%;
+	font-family: 'league_gothicregular';
 }
 
-.navbar{
-	position: relative;
-	left:0px;
-	width:200px;
+h3 {
+	font: bold;
+	font-size: 200%;
+	font-family: 'league_gothicregular';
+}
+
+h1 {
+	font-family: 'league_gothicregular';
+}
+
+#bodypost {
+	margin-top: 2em;
+	margin-left: 18em;
+	margin-bottom: 2em;
+	font-family: 'league_gothicregular';
+	width: 75%;
+}
+
+/***MEDIA SPECS***/
+
+/*mobile*/
+@media screen and (max-width:500px) {
+ 
+}
+/*tablet*/
+@media screen and (min-width:501px) and (max-width:999px) {
+   
+}
+
+/*desktop*/
+@media screen and (min-width:1000px) {
+   
 }
