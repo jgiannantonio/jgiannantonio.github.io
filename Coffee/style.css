@@ -58,7 +58,7 @@ table {
 #topheader {
 	display: block;
 	height: 30%;
-	background: images/beans-logo.png;
+	background: url("images/beans-logo.jpg");
 	text-align: center;
 }
 
