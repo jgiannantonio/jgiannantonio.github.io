@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'leaguegothic';
-    src: url('../type/leaguegothic-condensedregular.eot');
-    src: url('../type/leaguegothic-condensedregular.eot?#iefix') format('embedded-opentype'),
+    src: url('../type/leaguegothic-condensedregular.otf');
+    src: url('../type/leaguegothic-condensedregular.otf?#iefix') format('embedded-opentype'),
          url('../type/leaguegothic-condensedregular.woff') format('woff'),
          url('../type/leaguegothic-condensedregular.ttf') format('truetype'),
          url('../type/leaguegothic-condensedregular.svg#league_gothicCnRg') format('svg');
