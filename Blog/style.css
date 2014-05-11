@@ -2,9 +2,9 @@
     font-family: 'league_gothicCnRg';
     src: url('../fonts/LeagueGothic-CondensedRegular.otf');
     src: url('../fonts/leaguegothic-condensedregular.otf') format('embedded-opentype'),
-         url('../fonts/leaguegothic-condensedregular.otf.woff') format('woff'),
-         url('../fonts/leaguegothic-condensedregular.otf.ttf') format('truetype'),
-         url('../fonts/leaguegothic-condensedregular.otf.svg#league_gothicCnRg') format('svg');
+         url('../fonts/leaguegothic-condensedregular.woff') format('woff'),
+         url('../fonts/leaguegothic-condensedregular.ttf') format('truetype'),
+         url('../fonts/leaguegothic-condensedregular.svg#league_gothicCnRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
